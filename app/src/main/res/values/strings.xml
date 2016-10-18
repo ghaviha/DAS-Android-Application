@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Stream DAS</string>
+    <string name="unit_km">km/h</string>
+    <string name="unit_track">%</string>
+    <string name="train_type">Train</string>
+    <string name="train_mass">Weight</string>
+    <string name="train_start">From</string>
+    <string name="train_stop">To</string>
+    <string name="train_time">Travel time</string>
+    <string name="recalc">This will recalculate the new optimal speed profile bassed on data from the original speed profile, are sure you want to continue?</string>
+    <string name="demo">Enabling demo mode means no new gps data will gathered or used.</string>
+    <string name="demo_mode_activated">Demo mode\nactivated</string>
+    <string name="go">Go</string>
+    <string name="gps_network_not_enabled">GPS service is not activated</string>
+    <string name="open_location_settings">Open settings</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Start_vel">-</string>
+    <string name="km_h">Km/h</string>
+    <string name="start">Start</string>
+    <string name="percentage">-%</string>
+    <string name="percentage_trac">%</string>
+
+
+
+</resources>

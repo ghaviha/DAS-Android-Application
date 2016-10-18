@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:id="@+id/content"
+    android:orientation="vertical"
+    android:background="@color/common_plus_signin_btn_text_light_pressed"
+    tools:context=".MainView">
+
+
+
+    <android.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/ap_white"
+        android:elevation="15dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/gauge"/>
+
+                <TextView
+                    android:id="@+id/recV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:text="@string/Start_vel"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/rec_size"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/km_h"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/big_unit"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <!--///////////////////////////////////////////////////////-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:text="@string/start"
+                    android:id="@+id/start_button"
+                    android:onClick="runDAS"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/Battery"
+                    android:text="@string/percentage"
+                    android:background="@drawable/battery_p"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/ap_black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--///////////////////////////////////////////////////////-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/lever"/>
+
+                <TextView
+                    android:id="@+id/recT"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:text="@string/Start_vel"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/rec_size"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/percentage_trac"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/big_unit"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--///////////////////////////////////////////////////////-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ntime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/next_in_size"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+        <!--///////////////////////////////////////////////////////-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gauge"/>
+            <TextView
+                android:id="@+id/nrecV"
+                android:layout_width="0dp"
+                android:text="@string/Start_vel"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:textSize="@dimen/next_rec_size"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/km_h"
+                android:gravity="left|bottom"
+                android:textSize="@dimen/small_unit"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lever"/>
+            <TextView
+                android:id="@+id/nrecT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/Start_vel"
+                android:textSize="@dimen/next_rec_size"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/percentage_trac"
+                android:gravity="left|bottom"
+                android:textSize="@dimen/small_unit"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--///////////////////////////////////////////////////////-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <com.androidplot.xy.XYPlot
+            style="@style/APDefacto.Dark"
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </LinearLayout>
+</LinearLayout>

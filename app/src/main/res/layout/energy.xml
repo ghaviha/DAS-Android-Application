@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@color/common_plus_signin_btn_text_light_pressed">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="To be added, Energy-view"
+        android:id="@+id/textView"
+        android:gravity="top|center_horizontal"
+        android:textColor="#f90606"
+        android:textSize="40dp"
+        android:layout_gravity="top" />
+</LinearLayout>
